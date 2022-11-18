@@ -16,3 +16,8 @@ spring:
       discovery:
         locator:
           enabled: true
+      routes:
+        - id: pet-service
+          uri: lb://pet-service
+          predicates:
+            - Path=/pet/**
