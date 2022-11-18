@@ -21,3 +21,8 @@ spring:
           uri: lb://pet-service
           predicates:
             - Path=/pet/**
+        
+        - id: horaExtra-service
+          uri: lb://horaExtra-service
+          predicates:
+            - Path=/horaExtra/**
