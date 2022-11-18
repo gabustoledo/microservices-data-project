@@ -16,7 +16,7 @@ spring:
       discovery:
         locator:
           enabled: true
-        
+      routes:
         - id: horaExtra-service
           uri: lb://horaExtra-service
           predicates:
