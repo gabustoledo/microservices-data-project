@@ -10,7 +10,7 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/pettest
+    url: jdbc:postgresql://localhost:5432/justificativo
     username: myusername
     password: mypassword
     driver-class-name: org.postgresql.Driver

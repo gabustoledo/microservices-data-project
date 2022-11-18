@@ -16,13 +16,13 @@ spring:
       discovery:
         locator:
           enabled: true
-      routes:
-        - id: pet-service
-          uri: lb://pet-service
-          predicates:
-            - Path=/pet/**
         
         - id: horaExtra-service
           uri: lb://horaExtra-service
           predicates:
             - Path=/horaExtra/**
+        
+        - id: justificativo-service
+          uri: lb://justificativo-service
+          predicates:
+            - Path=/justificativo/**
