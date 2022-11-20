@@ -30,7 +30,7 @@ spring:
         - id: calcular-service
           uri: lb://calcular-service
           predicates:
-            - Path=/calcular/**
+            - Path=/calcular/**, /user/**
         
         - id: reporte-service
           uri: lb://reporte-service
