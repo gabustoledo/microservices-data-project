@@ -40,8 +40,7 @@ spring:
         - id: importar-service
           uri: lb://importar-service
           predicates:
-            - Path=/importar/**
-            - Path=/horario/**
+            - Path=/importar/**, /horario/**
       globalcors:
         cors-configurations:
           '[/**]':
