@@ -26,6 +26,22 @@ spring:
           uri: lb://justificativo-service
           predicates:
             - Path=/justificativo/**
+        
+        - id: calcular-service
+          uri: lb://calcular-service
+          predicates:
+            - Path=/calcular/**
+        
+        - id: reporte-service
+          uri: lb://reporte-service
+          predicates:
+            - Path=/reporte/**
+        
+        - id: importar-service
+          uri: lb://importar-service
+          predicates:
+            - Path=/importar/**
+            - Path=/horario/**
       globalcors:
         cors-configurations:
           '[/**]':
