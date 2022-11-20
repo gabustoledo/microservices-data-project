@@ -26,3 +26,11 @@ spring:
           uri: lb://justificativo-service
           predicates:
             - Path=/justificativo/**
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods:
+            - GET
+            - POST
